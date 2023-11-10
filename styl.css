@@ -10,18 +10,35 @@
     --max-width: 1200px;
   }
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+  }
+
+  section {
+    /* max-width: var(--max-width); */
+    margin: auto;
+    padding: 10px;
+    
+  }
 
 /* HEADER */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 80px;
+    padding: 0px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -321,8 +338,80 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+/* vedeo */
+.vedeo{
+    margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150vh;
+}
 
+video{
+    margin: 20px;
+    margin-left: 20px;
+}
 
+/* sale */
+
+.first-testimonial{
+    display: flex;
+
+}
+
+.assets {
+   width: 600px; 
+   height: 700px;
+}
+
+.testimonial__container :is(.section__header, .section__description) {
+    text-align: center;
+  }
+  
+  .testimonial__swiper {
+    /* width: 100%; */
+    margin-top: 4rem;
+  }
+  
+  .testimonial__card {
+    max-width: 800px;
+    margin: auto;
+    padding-inline: 4rem;
+    text-align: center;
+  }
+  
+  .testimonial__card .first-img {
+    /* margin-bottom: 2rem; */
+    color: var(--text-dark);
+  }
+  
+  .testimonial__card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: none;
+  }
+  
+  :is(.swiper-button-next, .swiper-button-prev) span {
+    padding: 0 7px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    border-radius: 100%;
+    border: 1px solid var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  :is(.swiper-button-next, .swiper-button-prev) span:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
 /* FOOTER */
 footer {
     background-color: #363636;
